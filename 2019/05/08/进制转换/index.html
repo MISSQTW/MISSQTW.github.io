@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>进制转换 | 新大陆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：2^00 + 2^10 + 2^21 + 2^31 + 2^40 + 2^51 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
+  <meta name="description" content="二进制（Binary），八进制（Octal），十进制（Decimal）十六进制（Hex） 1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：12^0*0 + 2^1*0 + 2^2*1 + 2^3*1 + 2^4*0 + 2^5*1 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
 <meta property="og:type" content="article">
 <meta property="og:title" content="进制转换">
 <meta property="og:url" content="http://yoursite.com/2019/05/08/进制转换/index.html">
 <meta property="og:site_name" content="新大陆">
-<meta property="og:description" content="1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：2^00 + 2^10 + 2^21 + 2^31 + 2^40 + 2^51 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
+<meta property="og:description" content="二进制（Binary），八进制（Octal），十进制（Decimal）十六进制（Hex） 1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：12^0*0 + 2^1*0 + 2^2*1 + 2^3*1 + 2^4*0 + 2^5*1 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-08T01:46:20.152Z">
+<meta property="og:updated_time" content="2019-05-08T02:10:28.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="进制转换">
-<meta name="twitter:description" content="1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：2^00 + 2^10 + 2^21 + 2^31 + 2^40 + 2^51 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
+<meta name="twitter:description" content="二进制（Binary），八进制（Octal），十进制（Decimal）十六进制（Hex） 1. 二进制(B) ==》 十进制 (D)把每位的2次方的结果从左到右依次相加的结果就是十进制的值eg：（101100）B = (44)D计算过程：12^0*0 + 2^1*0 + 2^2*1 + 2^3*1 + 2^4*0 + 2^5*1 = 0 + 0 + 4 + 8 + 0 + 32 = 44">
   
     <link rel="alternative" href="/atom.xml" title="新大陆" type="application/atom+xml">
   
@@ -152,22 +152,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-二进制-B-》-十进制-D"><a href="#1-二进制-B-》-十进制-D" class="headerlink" title="1. 二进制(B) ==》 十进制 (D)"></a>1. 二进制(B) ==》 十进制 (D)</h3><p>把每位的2次方的结果从左到右依次相加的结果就是十进制的值<br>eg：（101100）B = (44)D<br>计算过程：2^0<em>0 + 2^1</em>0 + 2^2<em>1 + 2^3</em>1 + 2^4<em>0 + 2^5</em>1 = 0 + 0 + 4 + 8 + 0 + 32 = 44<br><a id="more"></a></p>
-<h3 id="2-十进制（D）-》-二进制（B）"><a href="#2-十进制（D）-》-二进制（B）" class="headerlink" title="2. 十进制（D） ==》 二进制（B）"></a>2. 十进制（D） ==》 二进制（B）</h3><p>除2取余法，直到0为止，读数从最后一个余数往前读<br>eg: (44)D = (101100)B<br>计算过程：<br>44 ➗ 2 = 22 —— 0<br>22 ➗ 2 = 11 —— 0<br>11 ➗ 2 = 5  —— 1<br>5 ➗ 2 = 2 —— 1<br>2 ➗ 2 = 1 —— 0<br>1 ➗ 2 = 0 —— 1   </p>
-<h3 id="3-二进制-》-八进制"><a href="#3-二进制-》-八进制" class="headerlink" title="3. 二进制 === 》 八进制"></a>3. 二进制 === 》 八进制</h3><p>取三合一法，每三位成一位，将这三位二进制按权相加。<br>小数点前从右往左，不足在最左边补0<br>小数点后从左往右，不足在最右边补0<br>eg:（10111.10101）B = (27.52)O<br>计算过程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[0]10 111 . 101 01[0]</span><br><span class="line">   2   7  .  5    2</span><br></pre></td></tr></table></figure></p>
-<h3 id="4-八进制-》-二进制"><a href="#4-八进制-》-二进制" class="headerlink" title="4. 八进制 === 》 二进制"></a>4. 八进制 === 》 二进制</h3><p>取一分三法<br>eg: (27.52)O = (10111.10101）B<br>计算过程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2     7      .    5     2</span><br><span class="line">10   111     .   101     10</span><br></pre></td></tr></table></figure></p>
-<h3 id="5-二进制-》-十六进制"><a href="#5-二进制-》-十六进制" class="headerlink" title="5. 二进制   === 》 十六进制"></a>5. 二进制   === 》 十六进制</h3><p>取四合一法，方法同3<br>eg： (101111111)B = (17F)H<br>计算过程:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[000]1    0111    1111   </span><br><span class="line">   1        7      15</span><br></pre></td></tr></table></figure></p>
-<h3 id="6-十六进制-》-二进制"><a href="#6-十六进制-》-二进制" class="headerlink" title="6. 十六进制 === 》 二进制"></a>6. 十六进制 === 》 二进制</h3><p>取一分四<br>eg：（17F）H = (101111111)B<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  1     7     15</span><br><span class="line">0001  0111   1111</span><br></pre></td></tr></table></figure></p>
-<h3 id="7-八进制-》-十进制"><a href="#7-八进制-》-十进制" class="headerlink" title="7. 八进制 === 》 十进制"></a>7. 八进制 === 》 十进制</h3><p>把每位的8次方的结果从左到右依次相加的结果就是八进制的值<br>eg: (120)O = (80)D<br>计算过程：<br>8^0<em>0 + 8^1</em>2 + 8^2*1 = 0 + 16 + 64 = 80   </p>
-<h3 id="8-十进制-》-八进制"><a href="#8-十进制-》-八进制" class="headerlink" title="8. 十进制 === 》 八进制"></a>8. 十进制 === 》 八进制</h3><p>除8取余法，直到0为止，读数从最后一个余数往前读<br>eg: (80)D = (120)O<br>计算过程：80 ➗ 8 = 10 — 0<br>10 ➗ 8 = 1 —  2<br>1 ➗ 8 = 0 — 1     </p>
-<h3 id="9-十六进制-》-十进制"><a href="#9-十六进制-》-十进制" class="headerlink" title="9. 十六进制 === 》 十进制"></a>9. 十六进制 === 》 十进制</h3><p>把每位的16次方的结果从左到右依次相加的结果就是十六进制的值<br>eg: (B4)H = (180)D<br>计算过程：<br>16^0<em>4 + 16^1</em>11 = 4 + 176 = 80   </p>
-<h4 id="10-十进制-》-十六进制"><a href="#10-十进制-》-十六进制" class="headerlink" title="10.  十进制 === 》 十六进制"></a>10.  十进制 === 》 十六进制</h4><p>除16取余法，直到0为止，读数从最后一个余数往前读<br>eg: (180)D = (B4)H<br>计算过程：180 ➗ 16 = 11 — 4<br>11 ➗ 16 = 0 —  11   </p>
-<h3 id="11-八进制-》-十六进制"><a href="#11-八进制-》-十六进制" class="headerlink" title="11. 八进制 === 》 十六进制"></a>11. 八进制 === 》 十六进制</h3><p>先将八进制转二进制再二进制转十六进制<br>eg: (166)O = (76)H<br>计算过程:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1     6     6   </span><br><span class="line">001  110   110</span><br><span class="line">---------------</span><br><span class="line">0111   0110</span><br><span class="line"> 7      6</span><br></pre></td></tr></table></figure></p>
-<h3 id="12-十六进制转八进制"><a href="#12-十六进制转八进制" class="headerlink" title="12. 十六进制转八进制"></a>12. 十六进制转八进制</h3><p>先将十六进制转二进制再二进制转八进制<br>eg: (76)H  = (166)O<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">7      6</span><br><span class="line">0111  0110</span><br><span class="line">-----------</span><br><span class="line">01 110 110</span><br><span class="line">1   6   6</span><br></pre></td></tr></table></figure></p>
-<p>总结：1. 十进制转其他进制除基取余，其他进制转十进制乘以基数的次方   </p>
-<ol start="2">
-<li>二进制转八进制，取三合一，反之取一分三，不足位用0补  </li>
-<li>二进制转十六进制，取四合一，反之取一分四，不足位用0补 </li>
+        <p>二进制（Binary），八进制（Octal），十进制（Decimal）十六进制（Hex）</p>
+<h3 id="1-二进制-B-》-十进制-D"><a href="#1-二进制-B-》-十进制-D" class="headerlink" title="1. 二进制(B) ==》 十进制 (D)"></a>1. 二进制(B) ==》 十进制 (D)</h3><p>把每位的2次方的结果从左到右依次相加的结果就是十进制的值<br>eg：（101100）B = (44)D<br>计算过程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2^0*0 + 2^1*0 + 2^2*1 + 2^3*1 + 2^4*0 + 2^5*1 = 0 + 0 + 4 + 8 + 0 + 32 = 44</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="2-十进制（D）-》-二进制（B）"><a href="#2-十进制（D）-》-二进制（B）" class="headerlink" title="2. 十进制（D） ==》 二进制（B）"></a>2. 十进制（D） ==》 二进制（B）</h3><p>1). 整数部分，除2取余法，直到0为止，读数从最后一个余数往前读<br>eg: (44)D = (101100)B<br>计算过程：<br>44 ➗ 2 = 22 —— 0<br>22 ➗ 2 = 11 —— 0<br>11 ➗ 2 = 5  —— 1<br>5 ➗ 2 = 2 —— 1<br>2 ➗ 2 = 1 —— 0<br>1 ➗ 2 = 0 —— 1<br>2）小数部分，先乘2，然后获得运算结果的整数部分，再将结果中的小数部分乘2，以此类推，将第一次得到的整数部分作为高位。<br>eg： （0.25）D = (0.01)B<br>计算过程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">0.25 * 2 = 0. 5 (0)</span><br><span class="line">0.5 * 2 = 0.1(1)</span><br><span class="line">``` </span><br><span class="line">### 3. 二进制 === 》 八进制   </span><br><span class="line">取三合一法，每三位成一位，将这三位二进制按权相加。</span><br><span class="line">小数点前从右往左，不足在最左边补0   </span><br><span class="line">小数点后从左往右，不足在最右边补0   </span><br><span class="line">eg:（10111.10101）B = (27.52)O   </span><br><span class="line">计算过程：</span><br></pre></td></tr></table></figure></p>
+<p>[0]10 111 . 101 01[0]<br>   2   7  .  5    2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">### 4. 八进制 === 》 二进制   </span><br><span class="line">取一分三法   </span><br><span class="line">eg: (27.52)O = (10111.10101）B         </span><br><span class="line">计算过程：</span><br></pre></td></tr></table></figure></p>
+<p>   2     7      .    5     2<br>   10   111     .   101     10<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">### 5. 二进制   === 》 十六进制   </span><br><span class="line">取四合一法，方法同3   </span><br><span class="line">eg： (101111111)B = (17F)H   </span><br><span class="line">计算过程:</span><br></pre></td></tr></table></figure></p>
+<p>[000]1    0111    1111<br>   1        7      15<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">### 6. 十六进制 === 》 二进制   </span><br><span class="line">取一分四   </span><br><span class="line">eg：（17F）H = (101111111)B</span><br></pre></td></tr></table></figure></p>
+<p>  1     7     15<br>0001  0111   1111<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">### 7. 八进制 === 》 十进制   </span><br><span class="line">把每位的8次方的结果从左到右依次相加的结果就是八进制的值   </span><br><span class="line">eg: (120)O = (80)D   </span><br><span class="line">计算过程：</span><br></pre></td></tr></table></figure></p>
+<p>8^0<em>0 + 8^1</em>2 + 8^2*1 = 0 + 16 + 64 = 80<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">### 8. 十进制 === 》 八进制   </span><br><span class="line">除8取余法，直到0为止，读数从最后一个余数往前读  </span><br><span class="line">eg: (80)D = (120)O   </span><br><span class="line">计算过程：80 ➗ 8 = 10 --- 0   </span><br><span class="line">10 ➗ 8 = 1 ---  2   </span><br><span class="line">1 ➗ 8 = 0 --- 1     </span><br><span class="line">### 9. 十六进制 === 》 十进制   </span><br><span class="line">把每位的16次方的结果从左到右依次相加的结果就是十六进制的值   </span><br><span class="line">eg: (B4)H = (180)D   </span><br><span class="line">计算过程：</span><br></pre></td></tr></table></figure></p>
+<p>16^0<em>4 + 16^1</em>11 = 4 + 176 = 80<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#### 10.  十进制 === 》 十六进制   </span><br><span class="line">除16取余法，直到0为止，读数从最后一个余数往前读  </span><br><span class="line">eg: (180)D = (B4)H   </span><br><span class="line">计算过程：180 ➗ 16 = 11 --- 4   </span><br><span class="line">11 ➗ 16 = 0 ---  11   </span><br><span class="line">### 11. 八进制 === 》 十六进制</span><br><span class="line">先将八进制转二进制再二进制转十六进制   </span><br><span class="line">eg: (166)O = (76)H   </span><br><span class="line">计算过程:</span><br></pre></td></tr></table></figure></p>
+<p>1     6     6   </p>
+<h2 id="001-110-110"><a href="#001-110-110" class="headerlink" title="001  110   110"></a>001  110   110</h2><p>0111   0110<br> 7      6<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">### 12. 十六进制转八进制   </span><br><span class="line">先将十六进制转二进制再二进制转八进制   </span><br><span class="line">eg: (76)H  = (166)O</span><br></pre></td></tr></table></figure></p>
+<p>7      6</p>
+<h2 id="0111-0110"><a href="#0111-0110" class="headerlink" title="0111  0110"></a>0111  0110</h2><p>01 110 110<br>1   6   6<br><code>`</code><br>总结：   </p>
+<ol>
+<li>十进制转其他进制除基取余，其他进制转十进制乘以基数的次方   </li>
+<li>二进制转八进制，取三合一，反之取一分三，整数部分向左，小数部分向右，不足位用0补  </li>
+<li>二进制转十六进制，取四合一，反之取一分四，整数部分向左，小数部分向右，不足位用0补 </li>
 </ol>
 
       
@@ -310,19 +312,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">h5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">跨域</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -350,11 +340,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">h5</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">跨域</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -374,7 +372,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">商业</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">script</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">模板</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -394,15 +404,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">script</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模板</a>
+                <a href="javascript:void(0)" class="js-tag color3">商业</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -414,7 +416,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">微信开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dom</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">线程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">进程</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -427,18 +441,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">common.js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">微信开发</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">线程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">进程</a>
               </li>
             
             <div class="clearfix"></div>
