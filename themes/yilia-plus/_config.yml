@@ -1,8 +1,8 @@
 ﻿# Header-菜单
 menu:
   主页: /
-  技术笔记: https://zhousiwei.gitee.io/ibooks/
-  随笔: /tags/随笔/
+  分类: /categories/ || categories
+  随笔: /tags/ || tags
 
 # subNav-子导航
 subNav:
@@ -174,7 +174,7 @@ copyright_type: 1
 copyright_text:
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2018
+since: 2022
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
